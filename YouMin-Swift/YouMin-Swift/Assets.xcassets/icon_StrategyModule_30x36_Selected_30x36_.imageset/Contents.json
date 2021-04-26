@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "icon_StrategyModule_30x36_Selected_30x36_@3x.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "original"
+  }
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		846DC54526369BA6006BE311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846DC54426369BA6006BE311 /* Assets.xcassets */; };
 		84756CDC261D53FE0059F45E /* Channels.json in Resources */ = {isa = PBXBuildFile; fileRef = 84756CDB261D53FE0059F45E /* Channels.json */; };
 		84756CDF261D540A0059F45E /* Hardware.json in Resources */ = {isa = PBXBuildFile; fileRef = 84756CDE261D540A0059F45E /* Hardware.json */; };
 		84756CE2261D54170059F45E /* Recommend.json in Resources */ = {isa = PBXBuildFile; fileRef = 84756CE1261D54170059F45E /* Recommend.json */; };
@@ -40,7 +41,6 @@
 		8488F976261C494100B70FFF /* YMTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488F975261C494100B70FFF /* YMTabBarController.swift */; };
 		8488F97A261C4A5B00B70FFF /* YMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488F979261C4A5B00B70FFF /* YMNavigationController.swift */; };
 		849BE2A2261C41C30036798E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BE2A1261C41C30036798E /* AppDelegate.swift */; };
-		849BE2AB261C41C30036798E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849BE2AA261C41C30036798E /* Assets.xcassets */; };
 		849BE2AE261C41C30036798E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849BE2AC261C41C30036798E /* LaunchScreen.storyboard */; };
 		84E9B292261C615B006D143E /* YMFMBouncesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9B28F261C615B006D143E /* YMFMBouncesContentView.swift */; };
 		84E9B293261C615B006D143E /* YMFMBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9B290261C615B006D143E /* YMFMBasicContentView.swift */; };
@@ -56,11 +56,14 @@
 		84EE3600261F102E00708774 /* YMHomeCommon3ImageTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EE35FE261F102E00708774 /* YMHomeCommon3ImageTableCell.xib */; };
 		84EE3603261F106E00708774 /* HomeCommonCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE3602261F106E00708774 /* HomeCommonCellViewModel.swift */; };
 		84EE3606261F222B00708774 /* HomeCommonListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE3605261F222B00708774 /* HomeCommonListViewModel.swift */; };
-		9BDE1D614D32CE42D183D924 /* Pods_BibleColor_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91EEC69E937BED6123017CA6 /* Pods_BibleColor_MVVM.framework */; };
+		E21307847FF47EB2F2ABAC86 /* Pods_YouMin_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F6729D58834444F91A0FAB /* Pods_YouMin_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6A7CB497C58D1086AD1D785B /* Pods-BibleColor_MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BibleColor_MVVM.release.xcconfig"; path = "Target Support Files/Pods-BibleColor_MVVM/Pods-BibleColor_MVVM.release.xcconfig"; sourceTree = "<group>"; };
+		19272C95A4AFEF2D1FEEF145 /* Pods-YouMin-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouMin-Swift.debug.xcconfig"; path = "Target Support Files/Pods-YouMin-Swift/Pods-YouMin-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		58F6729D58834444F91A0FAB /* Pods_YouMin_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouMin_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A7CB497C58D1086AD1D785B /* Pods-YouMin-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouMin-Swift.release.xcconfig"; path = "Target Support Files/Pods-YouMin-Swift/Pods-YouMin-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		846DC54426369BA6006BE311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84756CDB261D53FE0059F45E /* Channels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Channels.json; sourceTree = "<group>"; };
 		84756CDE261D540A0059F45E /* Hardware.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hardware.json; sourceTree = "<group>"; };
 		84756CE1261D54170059F45E /* Recommend.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Recommend.json; sourceTree = "<group>"; };
@@ -93,9 +96,8 @@
 		8488F957261C45A900B70FFF /* YMHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMHomePageViewController.swift; sourceTree = "<group>"; };
 		8488F975261C494100B70FFF /* YMTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMTabBarController.swift; sourceTree = "<group>"; };
 		8488F979261C4A5B00B70FFF /* YMNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMNavigationController.swift; sourceTree = "<group>"; };
-		849BE29E261C41C30036798E /* BibleColor_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BibleColor_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		849BE29E261C41C30036798E /* YouMin-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YouMin-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		849BE2A1261C41C30036798E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		849BE2AA261C41C30036798E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		849BE2AD261C41C30036798E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		849BE2AF261C41C30036798E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84E9B28F261C615B006D143E /* YMFMBouncesContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMFMBouncesContentView.swift; sourceTree = "<group>"; };
@@ -112,8 +114,8 @@
 		84EE35FE261F102E00708774 /* YMHomeCommon3ImageTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YMHomeCommon3ImageTableCell.xib; sourceTree = "<group>"; };
 		84EE3602261F106E00708774 /* HomeCommonCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCommonCellViewModel.swift; sourceTree = "<group>"; };
 		84EE3605261F222B00708774 /* HomeCommonListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCommonListViewModel.swift; sourceTree = "<group>"; };
-		91EEC69E937BED6123017CA6 /* Pods_BibleColor_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BibleColor_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9AFAE0B4BB73C566C924042 /* Pods-BibleColor_MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BibleColor_MVVM.debug.xcconfig"; path = "Target Support Files/Pods-BibleColor_MVVM/Pods-BibleColor_MVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		BF241F8342FD2871FEEEA61B /* Pods-YouMin-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouMin-Swift.release.xcconfig"; path = "Target Support Files/Pods-YouMin-Swift/Pods-YouMin-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		D9AFAE0B4BB73C566C924042 /* Pods-YouMin-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouMin-Swift.debug.xcconfig"; path = "Target Support Files/Pods-YouMin-Swift/Pods-YouMin-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BDE1D614D32CE42D183D924 /* Pods_BibleColor_MVVM.framework in Frameworks */,
+				E21307847FF47EB2F2ABAC86 /* Pods_YouMin_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,8 +133,10 @@
 		287F93BC288999D7EAACED4A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D9AFAE0B4BB73C566C924042 /* Pods-BibleColor_MVVM.debug.xcconfig */,
-				6A7CB497C58D1086AD1D785B /* Pods-BibleColor_MVVM.release.xcconfig */,
+				D9AFAE0B4BB73C566C924042 /* Pods-YouMin-Swift.debug.xcconfig */,
+				6A7CB497C58D1086AD1D785B /* Pods-YouMin-Swift.release.xcconfig */,
+				19272C95A4AFEF2D1FEEF145 /* Pods-YouMin-Swift.debug.xcconfig */,
+				BF241F8342FD2871FEEEA61B /* Pods-YouMin-Swift.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -140,7 +144,7 @@
 		468217DA0B9E1B2962D875B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				91EEC69E937BED6123017CA6 /* Pods_BibleColor_MVVM.framework */,
+				58F6729D58834444F91A0FAB /* Pods_YouMin_Swift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -201,7 +205,7 @@
 		849BE295261C41C30036798E = {
 			isa = PBXGroup;
 			children = (
-				849BE2A0261C41C30036798E /* BibleColor_MVVM */,
+				849BE2A0261C41C30036798E /* YouMin-Swift */,
 				849BE29F261C41C30036798E /* Products */,
 				287F93BC288999D7EAACED4A /* Pods */,
 				468217DA0B9E1B2962D875B7 /* Frameworks */,
@@ -211,23 +215,23 @@
 		849BE29F261C41C30036798E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				849BE29E261C41C30036798E /* BibleColor_MVVM.app */,
+				849BE29E261C41C30036798E /* YouMin-Swift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		849BE2A0261C41C30036798E /* BibleColor_MVVM */ = {
+		849BE2A0261C41C30036798E /* YouMin-Swift */ = {
 			isa = PBXGroup;
 			children = (
 				84756CDA261D53A40059F45E /* Resource */,
 				849BE2B8261C41F00036798E /* Other */,
 				849BE2B7261C41E90036798E /* Common */,
 				849BE2B9261C41F60036798E /* Main */,
-				849BE2AA261C41C30036798E /* Assets.xcassets */,
 				849BE2AC261C41C30036798E /* LaunchScreen.storyboard */,
+				846DC54426369BA6006BE311 /* Assets.xcassets */,
 				849BE2AF261C41C30036798E /* Info.plist */,
 			);
-			path = BibleColor_MVVM;
+			path = "YouMin-Swift";
 			sourceTree = "<group>";
 		};
 		849BE2B7261C41E90036798E /* Common */ = {
@@ -495,9 +499,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		849BE29D261C41C30036798E /* BibleColor_MVVM */ = {
+		849BE29D261C41C30036798E /* YouMin-Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 849BE2B2261C41C30036798E /* Build configuration list for PBXNativeTarget "BibleColor_MVVM" */;
+			buildConfigurationList = 849BE2B2261C41C30036798E /* Build configuration list for PBXNativeTarget "YouMin-Swift" */;
 			buildPhases = (
 				23B0E653B3F5E4998F2DB83A /* [CP] Check Pods Manifest.lock */,
 				849BE29A261C41C30036798E /* Sources */,
@@ -509,9 +513,9 @@
 			);
 			dependencies = (
 			);
-			name = BibleColor_MVVM;
-			productName = BibleColor_MVVM;
-			productReference = 849BE29E261C41C30036798E /* BibleColor_MVVM.app */;
+			name = "YouMin-Swift";
+			productName = "YouMin-Swift";
+			productReference = 849BE29E261C41C30036798E /* YouMin-Swift.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -528,7 +532,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 849BE299261C41C30036798E /* Build configuration list for PBXProject "BibleColor_MVVM" */;
+			buildConfigurationList = 849BE299261C41C30036798E /* Build configuration list for PBXProject "YouMin-Swift" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -541,7 +545,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				849BE29D261C41C30036798E /* BibleColor_MVVM */,
+				849BE29D261C41C30036798E /* YouMin-Swift */,
 			);
 		};
 /* End PBXProject section */
@@ -555,6 +559,7 @@
 				84756CF1261D54580059F45E /* Entertainment.json in Resources */,
 				84756CEB261D54430059F45E /* Headline_banner.json in Resources */,
 				84EE35F3261EE3A600708774 /* YMAuthorCollectionViewCell.xib in Resources */,
+				846DC54526369BA6006BE311 /* Assets.xcassets in Resources */,
 				849BE2AE261C41C30036798E /* LaunchScreen.storyboard in Resources */,
 				84756D6B261DB2CE0059F45E /* YMHomeAttentionListViewController.xib in Resources */,
 				84756CE5261D54260059F45E /* PCGame.json in Resources */,
@@ -571,7 +576,6 @@
 				84756CDC261D53FE0059F45E /* Channels.json in Resources */,
 				84756CE8261D54360059F45E /* Headline.json in Resources */,
 				84756CFD261D54820059F45E /* MobileGame.json in Resources */,
-				849BE2AB261C41C30036798E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,7 +597,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BibleColor_MVVM-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-YouMin-Swift-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -606,15 +610,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BibleColor_MVVM/Pods-BibleColor_MVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-YouMin-Swift/Pods-YouMin-Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BibleColor_MVVM/Pods-BibleColor_MVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-YouMin-Swift/Pods-YouMin-Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BibleColor_MVVM/Pods-BibleColor_MVVM-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YouMin-Swift/Pods-YouMin-Swift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -787,14 +791,14 @@
 		};
 		849BE2B3261C41C30036798E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9AFAE0B4BB73C566C924042 /* Pods-BibleColor_MVVM.debug.xcconfig */;
+			baseConfigurationReference = 19272C95A4AFEF2D1FEEF145 /* Pods-YouMin-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = NJZ55E667U;
-				INFOPLIST_FILE = BibleColor_MVVM/Info.plist;
+				INFOPLIST_FILE = "YouMin-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -809,14 +813,14 @@
 		};
 		849BE2B4261C41C30036798E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A7CB497C58D1086AD1D785B /* Pods-BibleColor_MVVM.release.xcconfig */;
+			baseConfigurationReference = BF241F8342FD2871FEEEA61B /* Pods-YouMin-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = NJZ55E667U;
-				INFOPLIST_FILE = BibleColor_MVVM/Info.plist;
+				INFOPLIST_FILE = "YouMin-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -832,7 +836,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		849BE299261C41C30036798E /* Build configuration list for PBXProject "BibleColor_MVVM" */ = {
+		849BE299261C41C30036798E /* Build configuration list for PBXProject "YouMin-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				849BE2B0261C41C30036798E /* Debug */,
@@ -841,7 +845,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		849BE2B2261C41C30036798E /* Build configuration list for PBXNativeTarget "BibleColor_MVVM" */ = {
+		849BE2B2261C41C30036798E /* Build configuration list for PBXNativeTarget "YouMin-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				849BE2B3261C41C30036798E /* Debug */,
