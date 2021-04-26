@@ -36,7 +36,7 @@ class YMTabBarController: ESTabBarController {
         findGameController.title = "找游戏"
         findGameController.tabBarItem = ESTabBarItem(YMFMIrregularityBasicContentView(), title: nil, image: UIImage(named: "icon_GameLibraryModule_30x36_30x36_"), selectedImage: UIImage(named: "icon_GameLibraryModule_30x36_Selected_30x36_"), tag: 11)
         let gameNavigationController = YMNavigationController(rootViewController: findGameController)
-        gameNavigationController.isNavigationBarHidden = true
+//        gameNavigationController.isNavigationBarHidden = true
         
         let checkRaidersController = YMCheckRaidersViewController()
         checkRaidersController.title = "查攻略"
