@@ -797,15 +797,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = NJZ55E667U;
+				DEVELOPMENT_TEAM = QA4LDDYQRC;
 				INFOPLIST_FILE = "YouMin-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.biblecolor.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RingtonesWallpapers.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = BibleColor_Dev;
+				PROVISIONING_PROFILE_SPECIFIER = WallpaperAndRing_Dev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -819,15 +819,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = NJZ55E667U;
+				DEVELOPMENT_TEAM = QA4LDDYQRC;
 				INFOPLIST_FILE = "YouMin-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.biblecolor.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RingtonesWallpapers.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = BibleColor_Dev;
+				PROVISIONING_PROFILE_SPECIFIER = WallpaperAndRing_Dev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

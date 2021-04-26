@@ -1,0 +1,73 @@
+PODS:
+  - Alamofire (5.4.3)
+  - ESTabBarController-swift (2.8.0)
+  - FSPagerView (0.8.3)
+  - HandyJSON (5.0.2)
+  - JXSegmentedView (1.2.7)
+  - Kingfisher (6.3.0)
+  - MJRefresh (3.5.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.2)
+  - SVProgressHUD (2.2.5)
+  - SwiftHEXColors (1.4.1)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - ESTabBarController-swift
+  - FSPagerView (~> 0.8.3)
+  - HandyJSON
+  - JXSegmentedView (~> 1.2.7)
+  - Kingfisher
+  - MJRefresh
+  - Moya/RxSwift
+  - RxCocoa
+  - SVProgressHUD
+  - SwiftHEXColors
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - ESTabBarController-swift
+    - FSPagerView
+    - HandyJSON
+    - JXSegmentedView
+    - Kingfisher
+    - MJRefresh
+    - Moya
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SVProgressHUD
+    - SwiftHEXColors
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  JXSegmentedView: eb1cad21f57c2543c00c3e08b8fd3c7ca54f5acd
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftHEXColors: 1cb6e5d55c52749aa33db8f088ac55eb71ca4c7f
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: 6f97b27f974254c50c10defa46c83b8f5d10b8e0
+
+COCOAPODS: 1.10.1
