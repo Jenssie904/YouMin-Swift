@@ -1,0 +1,29 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '13.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+
+target 'YouMin-Swift' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for YouMin-Swift
+  
+  pod 'ESTabBarController-swift'
+  pod 'Kingfisher'
+  pod 'MJRefresh'
+  pod 'Moya/RxSwift'
+  pod 'SwiftyJSON'
+  pod 'HandyJSON'
+  pod 'SVProgressHUD'
+  pod 'Alamofire'
+  pod 'SwiftHEXColors'
+  pod 'RxCocoa'
+  
+  #pageView
+#  pod 'DNSPageView',      '~>2.1.0'
+  pod 'JXSegmentedView',  '~>1.2.7'
+  #banner
+  pod 'FSPagerView',      '~>0.8.3'
+end
