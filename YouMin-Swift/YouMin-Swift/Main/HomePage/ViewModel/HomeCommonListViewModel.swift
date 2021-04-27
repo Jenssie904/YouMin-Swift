@@ -34,7 +34,7 @@ class HomeCommonListViewModel {
     }
     
     public func requestData(type:RequestType) {
-        var api : YouMinApiManager = .GetHeadline
+        var api : YMHomeApiManager = .GetHeadline
         switch type {
             case .GetHeadline:
                 api = .GetHeadline
@@ -58,7 +58,7 @@ class HomeCommonListViewModel {
                 api = .GetMoblieGame
         }
         
-        let observable = YouMinApiProvider.rx.request(api).asObservable()
+        let observable = YMHomeApiProvider.rx.request(api).asObservable()
         _ = observable.subscribe(onNext: {[weak self]  (response:Moya.Response) in
             guard let `self` = self else {return}
             //这里只能转unicode才能获取到数据，utf8会变成nil WTF???可能string里有转义导致转换失败？？尤其是HTML结构

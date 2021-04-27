@@ -52,7 +52,3 @@ struct GameNavigationMoudle : HandyJSON {
 struct RecommendResult : HandyJSON {
     var sections : [AnyObject]?
 }
-
-struct GameRecommendResult : HandyJSON {
-    var result : RecommendResult?
-}

@@ -9,10 +9,19 @@ import UIKit
 import JXSegmentedView
 
 class YMFindGameRecommendSublistViewController: UIViewController {
+    
+    let findGameRecommendViewModel = FindGameRecommendChildViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        findGameRecommendViewModel.requestData()
+        
     }
 }
+
+
+
 
 extension YMFindGameRecommendSublistViewController: JXSegmentedListContainerViewListDelegate {
     func listView() -> UIView {

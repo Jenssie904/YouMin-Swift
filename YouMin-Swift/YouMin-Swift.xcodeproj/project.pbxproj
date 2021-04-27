@@ -10,6 +10,7 @@
 		846812512637BE52008FCB99 /* YMFindGameRecommendChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846812502637BE52008FCB99 /* YMFindGameRecommendChildViewController.swift */; };
 		846812592637C92E008FCB99 /* FindGameSublistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846812582637C92E008FCB99 /* FindGameSublistViewModel.swift */; };
 		8468125D2637E62A008FCB99 /* FindGameRecommendChildViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468125C2637E62A008FCB99 /* FindGameRecommendChildViewModel.swift */; };
+		846812612637F346008FCB99 /* YMFindGameNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846812602637F346008FCB99 /* YMFindGameNetwork.swift */; };
 		846DC54526369BA6006BE311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846DC54426369BA6006BE311 /* Assets.xcassets */; };
 		846DC55C2636AB42006BE311 /* YMFindGameChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DC55B2636AB42006BE311 /* YMFindGameChildViewController.swift */; };
 		846DC55F2636AFAB006BE311 /* YMFindGameSublistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DC55E2636AFAB006BE311 /* YMFindGameSublistViewController.swift */; };
@@ -83,6 +84,7 @@
 		846812502637BE52008FCB99 /* YMFindGameRecommendChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMFindGameRecommendChildViewController.swift; sourceTree = "<group>"; };
 		846812582637C92E008FCB99 /* FindGameSublistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindGameSublistViewModel.swift; sourceTree = "<group>"; };
 		8468125C2637E62A008FCB99 /* FindGameRecommendChildViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindGameRecommendChildViewModel.swift; sourceTree = "<group>"; };
+		846812602637F346008FCB99 /* YMFindGameNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMFindGameNetwork.swift; sourceTree = "<group>"; };
 		846DC54426369BA6006BE311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		846DC55B2636AB42006BE311 /* YMFindGameChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMFindGameChildViewController.swift; sourceTree = "<group>"; };
 		846DC55E2636AFAB006BE311 /* YMFindGameSublistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMFindGameSublistViewController.swift; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				84756D17261D5BEB0059F45E /* YMHomeNetWork.swift */,
+				846812602637F346008FCB99 /* YMFindGameNetwork.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -751,6 +754,7 @@
 				84EE35EB261EDE8E00708774 /* YMHomeCommonListViewController.swift in Sources */,
 				84756D78261DB9180059F45E /* YMAttentionAuthorTableCell.swift in Sources */,
 				849BE2A2261C41C30036798E /* AppDelegate.swift in Sources */,
+				846812612637F346008FCB99 /* YMFindGameNetwork.swift in Sources */,
 				8488F97A261C4A5B00B70FFF /* YMNavigationController.swift in Sources */,
 				8468125D2637E62A008FCB99 /* FindGameRecommendChildViewModel.swift in Sources */,
 				84E9B294261C615B006D143E /* YMFMIrregularityBasicContentView.swift in Sources */,
