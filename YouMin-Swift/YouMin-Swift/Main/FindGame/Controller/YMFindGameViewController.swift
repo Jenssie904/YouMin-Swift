@@ -59,6 +59,12 @@ extension YMFindGameViewController : JXSegmentedListContainerViewDataSource {
     }
 
     func listContainerView(_ listContainerView: JXSegmentedListContainerView, initListAt index: Int) -> JXSegmentedListContainerViewListDelegate {
-        return YMFindGameChildViewController(sometitles: ["近期热度","评分最高","最新上市","即将上市"])
+        
+        if 0 == index {
+            return YMFindGameRecommendSublistViewController()
+        } else {
+            let array = 1==index ? ["近期热度","当前在线","评分最高","最新上市","即将上市"] : ["近期热度","评分最高","最新上市","即将上市"]
+            return YMFindGameChildViewController(sometitles: array)
+        }
     }
 }
