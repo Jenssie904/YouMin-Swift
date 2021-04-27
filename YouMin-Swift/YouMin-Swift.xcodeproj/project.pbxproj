@@ -10,6 +10,18 @@
 		846DC54526369BA6006BE311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846DC54426369BA6006BE311 /* Assets.xcassets */; };
 		846DC55C2636AB42006BE311 /* YMFindGameChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DC55B2636AB42006BE311 /* YMFindGameChildViewController.swift */; };
 		846DC55F2636AFAB006BE311 /* YMFindGameSublistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DC55E2636AFAB006BE311 /* YMFindGameSublistViewController.swift */; };
+		846DC56F2636DFF9006BE311 /* newest.json in Resources */ = {isa = PBXBuildFile; fileRef = 846DC5642636DFF9006BE311 /* newest.json */; };
+		846DC5702636DFF9006BE311 /* hot.json in Resources */ = {isa = PBXBuildFile; fileRef = 846DC5652636DFF9006BE311 /* hot.json */; };
+		846DC5712636DFF9006BE311 /* upcoming.json in Resources */ = {isa = PBXBuildFile; fileRef = 846DC5662636DFF9006BE311 /* upcoming.json */; };
+		846DC5722636DFF9006BE311 /* highest.json in Resources */ = {isa = PBXBuildFile; fileRef = 846DC5672636DFF9006BE311 /* highest.json */; };
+		846DC5732636DFF9006BE311 /* recommend.json in Resources */ = {isa = PBXBuildFile; fileRef = 846DC5682636DFF9006BE311 /* recommend.json */; };
+		846DC5742636DFF9006BE311 /* newest.json in Resources */ = {isa = PBXBuildFile; fileRef = 846DC56A2636DFF9006BE311 /* newest.json */; };
+		846DC5752636DFF9006BE311 /* hot.json in Resources */ = {isa = PBXBuildFile; fileRef = 846DC56B2636DFF9006BE311 /* hot.json */; };
+		846DC5762636DFF9006BE311 /* upcoming.json in Resources */ = {isa = PBXBuildFile; fileRef = 846DC56C2636DFF9006BE311 /* upcoming.json */; };
+		846DC5772636DFF9006BE311 /* online.json in Resources */ = {isa = PBXBuildFile; fileRef = 846DC56D2636DFF9006BE311 /* online.json */; };
+		846DC5782636DFF9006BE311 /* highest.json in Resources */ = {isa = PBXBuildFile; fileRef = 846DC56E2636DFF9006BE311 /* highest.json */; };
+		846DC57B2636E05F006BE311 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DC57A2636E05F006BE311 /* GameModel.swift */; };
+		846DC5822636E2DF006BE311 /* GameRecommendResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DC5812636E2DF006BE311 /* GameRecommendResult.swift */; };
 		84756CDC261D53FE0059F45E /* Channels.json in Resources */ = {isa = PBXBuildFile; fileRef = 84756CDB261D53FE0059F45E /* Channels.json */; };
 		84756CDF261D540A0059F45E /* Hardware.json in Resources */ = {isa = PBXBuildFile; fileRef = 84756CDE261D540A0059F45E /* Hardware.json */; };
 		84756CE2261D54170059F45E /* Recommend.json in Resources */ = {isa = PBXBuildFile; fileRef = 84756CE1261D54170059F45E /* Recommend.json */; };
@@ -68,6 +80,18 @@
 		846DC54426369BA6006BE311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		846DC55B2636AB42006BE311 /* YMFindGameChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMFindGameChildViewController.swift; sourceTree = "<group>"; };
 		846DC55E2636AFAB006BE311 /* YMFindGameSublistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMFindGameSublistViewController.swift; sourceTree = "<group>"; };
+		846DC5642636DFF9006BE311 /* newest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newest.json; sourceTree = "<group>"; };
+		846DC5652636DFF9006BE311 /* hot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hot.json; sourceTree = "<group>"; };
+		846DC5662636DFF9006BE311 /* upcoming.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = upcoming.json; sourceTree = "<group>"; };
+		846DC5672636DFF9006BE311 /* highest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = highest.json; sourceTree = "<group>"; };
+		846DC5682636DFF9006BE311 /* recommend.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recommend.json; sourceTree = "<group>"; };
+		846DC56A2636DFF9006BE311 /* newest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newest.json; sourceTree = "<group>"; };
+		846DC56B2636DFF9006BE311 /* hot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hot.json; sourceTree = "<group>"; };
+		846DC56C2636DFF9006BE311 /* upcoming.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = upcoming.json; sourceTree = "<group>"; };
+		846DC56D2636DFF9006BE311 /* online.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = online.json; sourceTree = "<group>"; };
+		846DC56E2636DFF9006BE311 /* highest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = highest.json; sourceTree = "<group>"; };
+		846DC57A2636E05F006BE311 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameModel.swift; path = "YouMin-Swift/Main/FindGame/Model/GameModel.swift"; sourceTree = SOURCE_ROOT; };
+		846DC5812636E2DF006BE311 /* GameRecommendResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRecommendResult.swift; sourceTree = "<group>"; };
 		84756CDB261D53FE0059F45E /* Channels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Channels.json; sourceTree = "<group>"; };
 		84756CDE261D540A0059F45E /* Hardware.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hardware.json; sourceTree = "<group>"; };
 		84756CE1261D54170059F45E /* Recommend.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Recommend.json; sourceTree = "<group>"; };
@@ -173,9 +197,66 @@
 			path = HomePage;
 			sourceTree = "<group>";
 		};
+		846DC5622636DE59006BE311 /* FindGame */ = {
+			isa = PBXGroup;
+			children = (
+				846DC5692636DFF9006BE311 /* category */,
+				846DC5632636DFF9006BE311 /* recommend */,
+			);
+			path = FindGame;
+			sourceTree = "<group>";
+		};
+		846DC5632636DFF9006BE311 /* recommend */ = {
+			isa = PBXGroup;
+			children = (
+				846DC5642636DFF9006BE311 /* newest.json */,
+				846DC5652636DFF9006BE311 /* hot.json */,
+				846DC5662636DFF9006BE311 /* upcoming.json */,
+				846DC5672636DFF9006BE311 /* highest.json */,
+				846DC5682636DFF9006BE311 /* recommend.json */,
+			);
+			path = recommend;
+			sourceTree = "<group>";
+		};
+		846DC5692636DFF9006BE311 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				846DC56A2636DFF9006BE311 /* newest.json */,
+				846DC56B2636DFF9006BE311 /* hot.json */,
+				846DC56C2636DFF9006BE311 /* upcoming.json */,
+				846DC56D2636DFF9006BE311 /* online.json */,
+				846DC56E2636DFF9006BE311 /* highest.json */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		846DC57D2636E068006BE311 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				846DC57A2636E05F006BE311 /* GameModel.swift */,
+				846DC5812636E2DF006BE311 /* GameRecommendResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		846DC57E2636E079006BE311 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		846DC57F2636E081006BE311 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		84756CDA261D53A40059F45E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				846DC5622636DE59006BE311 /* FindGame */,
 				846DC5612636D593006BE311 /* HomePage */,
 			);
 			path = Resource;
@@ -340,10 +421,10 @@
 		849BE2BF261C42A10036798E /* FindGame */ = {
 			isa = PBXGroup;
 			children = (
+				846DC57F2636E081006BE311 /* View */,
+				846DC57E2636E079006BE311 /* ViewModel */,
+				846DC57D2636E068006BE311 /* Model */,
 				849BE2C6261C42F70036798E /* Controller */,
-				849BE2C5261C42F00036798E /* Model */,
-				849BE2C4261C42EA0036798E /* ViewModel */,
-				849BE2C3261C42E20036798E /* View */,
 			);
 			path = FindGame;
 			sourceTree = "<group>";
@@ -379,27 +460,6 @@
 				849BE2CF261C433B0036798E /* View */,
 			);
 			path = UserPage;
-			sourceTree = "<group>";
-		};
-		849BE2C3261C42E20036798E /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		849BE2C4261C42EA0036798E /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		849BE2C5261C42F00036798E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		849BE2C6261C42F70036798E /* Controller */ = {
@@ -571,25 +631,35 @@
 			files = (
 				84756CF4261D54620059F45E /* Technology.json in Resources */,
 				84756CF1261D54580059F45E /* Entertainment.json in Resources */,
+				846DC5782636DFF9006BE311 /* highest.json in Resources */,
 				84756CEB261D54430059F45E /* Headline_banner.json in Resources */,
+				846DC5722636DFF9006BE311 /* highest.json in Resources */,
 				84EE35F3261EE3A600708774 /* YMAuthorCollectionViewCell.xib in Resources */,
+				846DC5702636DFF9006BE311 /* hot.json in Resources */,
 				846DC54526369BA6006BE311 /* Assets.xcassets in Resources */,
 				849BE2AE261C41C30036798E /* LaunchScreen.storyboard in Resources */,
+				846DC5762636DFF9006BE311 /* upcoming.json in Resources */,
+				846DC5712636DFF9006BE311 /* upcoming.json in Resources */,
 				84756D6B261DB2CE0059F45E /* YMHomeAttentionListViewController.xib in Resources */,
 				84756CE5261D54260059F45E /* PCGame.json in Resources */,
 				84756CFA261D54790059F45E /* Anime.json in Resources */,
 				84EE35FB261F0D2600708774 /* YMHomeCommon1ImageTableCell.xib in Resources */,
 				84EE3600261F102E00708774 /* YMHomeCommon3ImageTableCell.xib in Resources */,
+				846DC56F2636DFF9006BE311 /* newest.json in Resources */,
+				846DC5752636DFF9006BE311 /* hot.json in Resources */,
 				84756CDF261D540A0059F45E /* Hardware.json in Resources */,
 				84EE35EC261EDE8E00708774 /* YMHomeCommonListViewController.xib in Resources */,
 				84756CF7261D54710059F45E /* Flim.json in Resources */,
 				84756CEE261D544F0059F45E /* ConsoleGame.json in Resources */,
 				84756CE2261D54170059F45E /* Recommend.json in Resources */,
+				846DC5772636DFF9006BE311 /* online.json in Resources */,
 				84756D00261D548A0059F45E /* Attention.json in Resources */,
 				84756D79261DB9180059F45E /* YMAttentionAuthorTableCell.xib in Resources */,
 				84756CDC261D53FE0059F45E /* Channels.json in Resources */,
 				84756CE8261D54360059F45E /* Headline.json in Resources */,
+				846DC5732636DFF9006BE311 /* recommend.json in Resources */,
 				84756CFD261D54820059F45E /* MobileGame.json in Resources */,
+				846DC5742636DFF9006BE311 /* newest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,7 +717,9 @@
 				846DC55C2636AB42006BE311 /* YMFindGameChildViewController.swift in Sources */,
 				84756D7F261DB9820059F45E /* HomeSubListAuthorTableCellViewModel.swift in Sources */,
 				84756D36261D9A160059F45E /* YMHomeAttentionListViewController.swift in Sources */,
+				846DC57B2636E05F006BE311 /* GameModel.swift in Sources */,
 				84EE35FF261F102E00708774 /* YMHomeCommon3ImageTableCell.swift in Sources */,
+				846DC5822636E2DF006BE311 /* GameRecommendResult.swift in Sources */,
 				846DC55F2636AFAB006BE311 /* YMFindGameSublistViewController.swift in Sources */,
 				84756D1D261D5F3C0059F45E /* FileManager.swift in Sources */,
 				84EE3603261F106E00708774 /* HomeCommonCellViewModel.swift in Sources */,
