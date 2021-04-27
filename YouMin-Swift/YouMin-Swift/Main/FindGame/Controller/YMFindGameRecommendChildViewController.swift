@@ -9,7 +9,6 @@ import UIKit
 import JXSegmentedView
 
 class YMFindGameRecommendSublistViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }

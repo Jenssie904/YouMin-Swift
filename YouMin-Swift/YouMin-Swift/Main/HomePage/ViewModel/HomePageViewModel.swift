@@ -17,7 +17,7 @@ class HomePageViewModel {
         return channels.asDriver()
     }
     public func requestData() {
-        let observable = YouMinApiProvider.rx.request(.GetChannels).asObservable()
+        let observable = YMHomeApiProvider.rx.request(.GetChannels).asObservable()
         _ = observable.subscribe(onNext: {[weak self]  (response:Moya.Response) in
             guard let `self` = self else {return}
             //这里只能转unicode才能获取到数据，utf8会变成nil WTF???可能string里有转义导致转换失败？？尤其是HTML结构

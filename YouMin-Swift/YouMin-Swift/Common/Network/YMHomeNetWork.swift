@@ -8,9 +8,9 @@
 import Foundation
 import Moya
 
-let YouMinApiProvider = MoyaProvider<YouMinApiManager>(stubClosure:MoyaProvider.delayedStub(1))
+let YMHomeApiProvider = MoyaProvider<YMHomeApiManager>(stubClosure:MoyaProvider.delayedStub(1))
 
-enum YouMinApiManager {
+enum YMHomeApiManager {
     case GetChannels
     case GetAttentionList
     case GetHeadline
@@ -25,7 +25,7 @@ enum YouMinApiManager {
     case GetMoblieGame
 }
 
-extension YouMinApiManager : TargetType {
+extension YMHomeApiManager : TargetType {
     
     var baseURL: URL {
         return URL(string: "http://appapi2.gamersky.com")!
