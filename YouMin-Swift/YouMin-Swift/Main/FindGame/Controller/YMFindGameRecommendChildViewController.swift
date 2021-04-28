@@ -15,8 +15,9 @@ class YMFindGameRecommendSublistViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        findGameRecommendViewModel.requestData()
         
+        findGameRecommendViewModel.requestData()
+        //数据绑定监听
     }
 }
 

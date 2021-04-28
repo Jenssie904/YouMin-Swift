@@ -9,9 +9,11 @@ import UIKit
 import JXSegmentedView
 
 class YMFindGameChildViewController: UIViewController {
-    var titles  = [String]()
+    var titles              = [String]()
+    var channelIndex : Int  = 0
     let segmentedDataSource = JXSegmentedTitleDataSource()
-    let segmentedView = JXSegmentedView()
+    let segmentedView       = JXSegmentedView()
+    @IBOutlet weak var tableView : UITableView!
     lazy var listContainerView: JXSegmentedListContainerView! = {
         return JXSegmentedListContainerView(dataSource: self)
     }()
@@ -21,8 +23,9 @@ class YMFindGameChildViewController: UIViewController {
         setupSegment()
     }
 
-    init(sometitles : [String]) {
-        titles = sometitles
+    init(sometitles : [String],channelIndex:Int) {
+        self.channelIndex = channelIndex
+        self.titles = sometitles
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -79,7 +82,7 @@ extension YMFindGameChildViewController: JXSegmentedListContainerViewDataSource 
     }
 
     func listContainerView(_ listContainerView: JXSegmentedListContainerView, initListAt index: Int) -> JXSegmentedListContainerViewListDelegate {
-        return YMFindGameSublistViewController()
+        return YMFindGameSublistViewController(channelIndex: channelIndex, categoryIndex: index)
     }
 }
 
