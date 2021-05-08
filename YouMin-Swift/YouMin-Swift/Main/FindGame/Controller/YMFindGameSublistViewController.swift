@@ -30,15 +30,32 @@ class YMFindGameSublistViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.register(UINib(nibName: "FindGameTableViewCell", bundle: nil), forCellReuseIdentifier: "FindGameTableViewCellIde")
         gameSublistViewModel.requestData(channelIndex: channelIndex, categoryIndex: categoryIndex)
-        gameSublistViewModel.dataSourceDriver.skip(1).drive { [weak self] (games:[GameModel]) in
+        gameSublistViewModel.dataSourceDriver.skip(1).drive {[weak self] (cellViewModels: [FindGameSublistCellViewModel]) in
             guard let `self` = self else {return}
             self.tableView.reloadData()
         }.disposed(by: disposeBag)
     }
 }
 
+extension YMFindGameSublistViewController : UITableViewDelegate,UITableViewDataSource
+{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return gameSublistViewModel.dataSource.count
+    }
 
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150.0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FindGameTableViewCellIde", for: indexPath) as! FindGameTableViewCell
+        cell.bindViewModel(viewModel: gameSublistViewModel.dataSource[indexPath.row])
+        return cell
+    }
+}
 
 
 extension YMFindGameSublistViewController: JXSegmentedListContainerViewListDelegate {

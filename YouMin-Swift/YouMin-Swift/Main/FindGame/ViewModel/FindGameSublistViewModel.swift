@@ -12,11 +12,11 @@ import Moya
 import HandyJSON
 
 class FindGameSublistViewModel {
-    private var dataSourceBehavior : BehaviorRelay<[GameModel]> = BehaviorRelay(value: [])
-    public var dataSourceDriver : Driver<[GameModel]> {
+    private var dataSourceBehavior : BehaviorRelay<[FindGameSublistCellViewModel]> = BehaviorRelay(value: [])
+    public var dataSourceDriver : Driver<[FindGameSublistCellViewModel]> {
         return dataSourceBehavior.asDriver()
     }
-    public var dataSource : [GameModel] {
+    public var dataSource : [FindGameSublistCellViewModel] {
         return dataSourceBehavior.value
     }
     public func requestData(channelIndex:Int,categoryIndex:Int) {
@@ -26,7 +26,11 @@ class FindGameSublistViewModel {
             //这里只能转unicode才能获取到数据，utf8会变成nil WTF???可能string里有转义导致转换失败？？尤其是HTML结构
             guard let jsonStr = String(data: response.data, encoding: .unicode) else {return}
             guard let result = JSONDeserializer<GameListResult>.deserializeFrom(json: jsonStr, designatedPath: "result"),let models = result.result?.games else {return}
-            self.dataSourceBehavior.accept(models)
+            
+            let cellModels = models.map { (model:GameModel) -> FindGameSublistCellViewModel in
+                return FindGameSublistCellViewModel(model: model)
+            }
+            self.dataSourceBehavior.accept(cellModels)
         })
     }
 }
