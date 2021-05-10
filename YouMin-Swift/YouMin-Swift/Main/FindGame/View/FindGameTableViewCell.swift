@@ -20,13 +20,13 @@ class FindGameTableViewCell: UITableViewCell {
     @IBOutlet weak var coverView        : UIImageView!
     @IBOutlet weak var gameTitleLabel   : UILabel!
     @IBOutlet weak var starView         : UIView!
+    @IBOutlet weak var starText         : UILabel!
     @IBOutlet weak var wantPlayLabel    : UILabel!
     @IBOutlet weak var gameTagLabel     : UILabel!
     @IBOutlet weak var priceLabel       : UILabel!
     @IBOutlet weak var lowestPriceView  : UIView!
     
     fileprivate let disposeBag = DisposeBag()
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -49,8 +49,10 @@ class FindGameTableViewCell: UITableViewCell {
         viewModel.gsScore.subscribeOn(MainScheduler.instance).subscribe {[weak self] (score:Float) in
             guard let `self` = self else {return}
             self.starView.isHidden = 0.0==score ? true : false
+            self.starText.isHidden = 0.0==score ? true : false
             self.wantPlayLabel.isHidden = 0.0==score ? false : true
             self.starViewWidthContraint.constant = CGFloat(score/10.0)*54.0
+            self.starText.text = "\(score)"
         }.disposed(by: disposeBag)
 
         //多少人想玩,上面已经控制显示隐藏了，所以这里只要显示即可
@@ -59,5 +61,7 @@ class FindGameTableViewCell: UITableViewCell {
         viewModel.gameTag.drive(gameTagLabel.rx.text).disposed(by:disposeBag)
         //价格
         viewModel.price.drive(priceLabel.rx.attributedText).disposed(by:disposeBag)
+        
+        priceViewWidthContraint.constant = priceLabel.sizeThatFits(CGSize(width: 1000, height: 15)).width + 10.0
     }
 }

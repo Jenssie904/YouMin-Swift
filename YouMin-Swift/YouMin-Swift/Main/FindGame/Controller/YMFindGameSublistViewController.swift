@@ -3,7 +3,7 @@
 //  YouMin-Swift
 //
 //  Created by admin on 2021/4/26.
-//
+//  只能直接显示这个sublist了 ？
 
 import UIKit
 import JXSegmentedView
@@ -30,7 +30,7 @@ class YMFindGameSublistViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         tableView.register(UINib(nibName: "FindGameTableViewCell", bundle: nil), forCellReuseIdentifier: "FindGameTableViewCellIde")
         gameSublistViewModel.requestData(channelIndex: channelIndex, categoryIndex: categoryIndex)
         gameSublistViewModel.dataSourceDriver.skip(1).drive {[weak self] (cellViewModels: [FindGameSublistCellViewModel]) in
@@ -43,6 +43,7 @@ class YMFindGameSublistViewController: UIViewController {
 extension YMFindGameSublistViewController : UITableViewDelegate,UITableViewDataSource
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("+++++++++++gameSublistViewViewModel.dataSource.count:\(gameSublistViewModel.dataSource.count)")
         return gameSublistViewModel.dataSource.count
     }
 

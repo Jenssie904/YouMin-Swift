@@ -10,7 +10,6 @@
 		845FA80826393CD0004A5016 /* YMFindGameSublistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845FA80726393CD0004A5016 /* YMFindGameSublistViewController.xib */; };
 		845FA80C26393FD3004A5016 /* FindGameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FA80A26393FD3004A5016 /* FindGameTableViewCell.swift */; };
 		845FA80D26393FD3004A5016 /* FindGameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845FA80B26393FD3004A5016 /* FindGameTableViewCell.xib */; };
-		845FA8102639430F004A5016 /* YMFindGameChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845FA80F2639430F004A5016 /* YMFindGameChildViewController.xib */; };
 		845FA821263965BD004A5016 /* FindGameSublistCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FA820263965BD004A5016 /* FindGameSublistCellViewModel.swift */; };
 		846812512637BE52008FCB99 /* YMFindGameRecommendChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846812502637BE52008FCB99 /* YMFindGameRecommendChildViewController.swift */; };
 		846812592637C92E008FCB99 /* FindGameSublistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846812582637C92E008FCB99 /* FindGameSublistViewModel.swift */; };
@@ -89,7 +88,6 @@
 		845FA80726393CD0004A5016 /* YMFindGameSublistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YMFindGameSublistViewController.xib; sourceTree = "<group>"; };
 		845FA80A26393FD3004A5016 /* FindGameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindGameTableViewCell.swift; sourceTree = "<group>"; };
 		845FA80B26393FD3004A5016 /* FindGameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindGameTableViewCell.xib; sourceTree = "<group>"; };
-		845FA80F2639430F004A5016 /* YMFindGameChildViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YMFindGameChildViewController.xib; sourceTree = "<group>"; };
 		845FA820263965BD004A5016 /* FindGameSublistCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindGameSublistCellViewModel.swift; sourceTree = "<group>"; };
 		846812502637BE52008FCB99 /* YMFindGameRecommendChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMFindGameRecommendChildViewController.swift; sourceTree = "<group>"; };
 		846812582637C92E008FCB99 /* FindGameSublistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindGameSublistViewModel.swift; sourceTree = "<group>"; };
@@ -500,7 +498,6 @@
 				8488F953261C459300B70FFF /* YMFindGameViewController.swift */,
 				846812502637BE52008FCB99 /* YMFindGameRecommendChildViewController.swift */,
 				846DC55B2636AB42006BE311 /* YMFindGameChildViewController.swift */,
-				845FA80F2639430F004A5016 /* YMFindGameChildViewController.xib */,
 				846DC55E2636AFAB006BE311 /* YMFindGameSublistViewController.swift */,
 				845FA80726393CD0004A5016 /* YMFindGameSublistViewController.xib */,
 			);
@@ -678,7 +675,6 @@
 				846DC5712636DFF9006BE311 /* recommend_upcoming.json in Resources */,
 				84756D6B261DB2CE0059F45E /* YMHomeAttentionListViewController.xib in Resources */,
 				84756CE5261D54260059F45E /* PCGame.json in Resources */,
-				845FA8102639430F004A5016 /* YMFindGameChildViewController.xib in Resources */,
 				84756CFA261D54790059F45E /* Anime.json in Resources */,
 				845FA80D26393FD3004A5016 /* FindGameTableViewCell.xib in Resources */,
 				84EE35FB261F0D2600708774 /* YMHomeCommon1ImageTableCell.xib in Resources */,

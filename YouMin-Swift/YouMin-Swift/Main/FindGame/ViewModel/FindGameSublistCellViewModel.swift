@@ -53,8 +53,8 @@ extension FindGameSublistCellViewModel {
         modelDriver.map{
             guard let tags = $0.gameTag else {return ""}
             var resultStr = ""
-            for tag in tags { resultStr.append("\(tag)\\") }
-            resultStr.remove(at: resultStr.index(before: resultStr.endIndex))
+            for tag in tags { resultStr.append("\(tag)/ ") }
+            resultStr.remove(at: resultStr.index(resultStr.startIndex, offsetBy: (resultStr.count-2)))
             return resultStr
         }.asDriver()
     }
@@ -62,7 +62,7 @@ extension FindGameSublistCellViewModel {
     //价格
     public var price : Driver<NSAttributedString> {
         modelDriver.map {
-            var attribute = [NSAttributedString.Key.foregroundColor: UIColor(hex: 0x666666)!,NSAttributedString.Key.backgroundColor: UIColor(hex: 0xefefef)!,NSAttributedString.Key.font:UIFont.systemFont(ofSize: 10)] as [NSAttributedString.Key : Any]
+            var attribute = [NSAttributedString.Key.foregroundColor: UIColor(hex: 0x666666)!,NSAttributedString.Key.font:UIFont.systemFont(ofSize: 10)] as [NSAttributedString.Key : Any]
             guard let price = $0.FhPrice,price.count != 0 else {return NSAttributedString(string: "暂无价格", attributes: attribute as [NSAttributedString.Key : Any])}
             let priceAttrString = NSMutableAttributedString(string: price, attributes: attribute)
             
@@ -75,11 +75,14 @@ extension FindGameSublistCellViewModel {
 
             //价格相同也不显示折扣划扣价格
             guard let originalPrice = $0.FhOriginalPrice,originalPrice.count != 0,originalPrice != price else {return priceAttrString}
+            
+            let blankAttributeStr = NSMutableAttributedString(string: " ", attributes: attribute)
+            priceAttrString.append(blankAttributeStr)
+            
             attribute[NSAttributedString.Key.strikethroughStyle] = NSUnderlineStyle.single.rawValue as NSObject
-            attribute[NSAttributedString.Key.foregroundColor] = UIColor(hex: 0xcccccc)
+            attribute[NSAttributedString.Key.foregroundColor] = UIColor(hex: 0x999999)
             let originalPriceAttrString = NSAttributedString(string: originalPrice,attributes: attribute)
             priceAttrString.append(originalPriceAttrString)
-            
             return priceAttrString
         }
     }

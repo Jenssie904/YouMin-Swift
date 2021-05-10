@@ -14,15 +14,10 @@ class YMFindGameRecommendSublistViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         findGameRecommendViewModel.requestData()
         //数据绑定监听
     }
 }
-
-
-
 
 extension YMFindGameRecommendSublistViewController: JXSegmentedListContainerViewListDelegate {
     func listView() -> UIView {

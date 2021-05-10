@@ -3,17 +3,16 @@
 //  YouMin-Swift
 //
 //  Created by admin on 2021/4/26.
-//
+//  这个不显示到前面了？
 
 import UIKit
 import JXSegmentedView
 
 class YMFindGameChildViewController: UIViewController {
     var titles              = [String]()
-    var channelIndex : Int  = 0
+    var channelIndex : Int  = 0             //频道名称
     let segmentedDataSource = JXSegmentedTitleDataSource()
     let segmentedView       = JXSegmentedView()
-    @IBOutlet weak var tableView : UITableView!
     lazy var listContainerView: JXSegmentedListContainerView! = {
         return JXSegmentedListContainerView(dataSource: self)
     }()
@@ -22,11 +21,12 @@ class YMFindGameChildViewController: UIViewController {
         super.viewDidLoad()
         setupSegment()
     }
-
+    
+    //初始化界面
     init(sometitles : [String],channelIndex:Int) {
-        self.channelIndex = channelIndex
-        self.titles = sometitles
         super.init(nibName: nil, bundle: nil)
+        self.channelIndex   = channelIndex
+        self.titles         = sometitles
     }
     
     required init?(coder: NSCoder) {
@@ -42,7 +42,7 @@ class YMFindGameChildViewController: UIViewController {
         segmentedDataSource.titleNormalFont = .systemFont(ofSize: 16)
         segmentedDataSource.isTitleColorGradientEnabled = true
         segmentedDataSource.titles = titles
-
+        
         //配置指示器
         let indicator = JXSegmentedIndicatorLineView()
         indicator.indicatorHeight = 1.0/UIScreen.main.scale
@@ -62,14 +62,14 @@ class YMFindGameChildViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-
         listContainerView.frame = CGRect(x: 0, y: 50, width: view.bounds.size.width, height: view.bounds.size.height - 50)
     }
 }
 
+//不能显示当前view ？why
 extension YMFindGameChildViewController: JXSegmentedListContainerViewListDelegate {
     func listView() -> UIView {
-        return view
+        return self.view
     }
 }
 

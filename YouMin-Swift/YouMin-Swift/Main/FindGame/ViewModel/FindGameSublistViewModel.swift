@@ -25,7 +25,10 @@ class FindGameSublistViewModel {
             guard let `self` = self else {return}
             //这里只能转unicode才能获取到数据，utf8会变成nil WTF???可能string里有转义导致转换失败？？尤其是HTML结构
             guard let jsonStr = String(data: response.data, encoding: .unicode) else {return}
-            guard let result = JSONDeserializer<GameListResult>.deserializeFrom(json: jsonStr, designatedPath: "result"),let models = result.result?.games else {return}
+            
+            print("\n\n =========jsonStr:\(jsonStr) \n\n")
+            
+            guard let result = JSONDeserializer<GameListResult>.deserializeFrom(json: jsonStr, designatedPath: ""),let models = result.result?.games else {return}
             
             let cellModels = models.map { (model:GameModel) -> FindGameSublistCellViewModel in
                 return FindGameSublistCellViewModel(model: model)
