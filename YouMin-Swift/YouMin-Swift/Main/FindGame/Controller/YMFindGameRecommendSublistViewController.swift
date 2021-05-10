@@ -10,13 +10,15 @@ import JXSegmentedView
 
 class YMFindGameRecommendSublistViewController: UIViewController {
     
+    @IBOutlet weak var recommendTableView : UITableView!
+    
     let findGameRecommendViewModel = FindGameRecommendChildViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         findGameRecommendViewModel.requestData()
-        //数据绑定监听
     }
+    
 }
 
 extension YMFindGameRecommendSublistViewController: JXSegmentedListContainerViewListDelegate {
@@ -24,3 +26,16 @@ extension YMFindGameRecommendSublistViewController: JXSegmentedListContainerView
         return view
     }
 }
+
+//tableView代理函数
+extension YMFindGameRecommendSublistViewController : UITableViewDelegate,UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+}
+

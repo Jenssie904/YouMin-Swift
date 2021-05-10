@@ -34,7 +34,7 @@ class YMFindGameChildViewController: UIViewController {
     }
     
     fileprivate func setupSegment() {
-        view.backgroundColor = .white
+        view.backgroundColor = .black
         //配置数据源
         segmentedDataSource.titleNormalColor = .gray
         segmentedDataSource.titleSelectedColor = .black
@@ -54,8 +54,9 @@ class YMFindGameChildViewController: UIViewController {
         segmentedView.dataSource = segmentedDataSource
         segmentedView.indicators = [indicator]
         segmentedView.frame = CGRect(x: 0, y: 64, width: view.bounds.size.width, height: 40)
+        //视图置顶
         view.addSubview(segmentedView)
-
+        
         segmentedView.listContainer = listContainerView
         view.addSubview(listContainerView)
     }
@@ -69,7 +70,7 @@ class YMFindGameChildViewController: UIViewController {
 //不能显示当前view ？why
 extension YMFindGameChildViewController: JXSegmentedListContainerViewListDelegate {
     func listView() -> UIView {
-        return self.view
+        return view
     }
 }
 

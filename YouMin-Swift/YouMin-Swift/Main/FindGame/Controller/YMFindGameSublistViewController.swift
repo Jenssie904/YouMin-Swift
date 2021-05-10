@@ -43,7 +43,6 @@ class YMFindGameSublistViewController: UIViewController {
 extension YMFindGameSublistViewController : UITableViewDelegate,UITableViewDataSource
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("+++++++++++gameSublistViewViewModel.dataSource.count:\(gameSublistViewModel.dataSource.count)")
         return gameSublistViewModel.dataSource.count
     }
 

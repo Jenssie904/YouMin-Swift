@@ -40,7 +40,7 @@ class FindGameTableViewCell: UITableViewCell {
         viewModel.coverUrl.subscribe {[weak self] (url:URL?) in
             guard let `self` = self else {return}
             guard let imageURL = url else {return}
-            self.coverView.kf.setImage(with: imageURL, placeholder: UIImage(named: ""), options: nil, completionHandler: nil)
+            self.coverView.kf.setImage(with: imageURL, placeholder: UIImage(named: "icon_UserHeadImage_34x34_37x37_"), options: nil, completionHandler: nil)
         }.disposed(by: disposeBag)
 
         viewModel.title.drive(gameTitleLabel.rx.text).disposed(by: disposeBag)
