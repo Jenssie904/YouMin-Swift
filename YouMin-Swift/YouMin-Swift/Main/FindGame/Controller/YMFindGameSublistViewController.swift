@@ -35,7 +35,7 @@ class YMFindGameSublistViewController: UIViewController {
         gameSublistViewModel.requestData(channelIndex: channelIndex, categoryIndex: categoryIndex)
         gameSublistViewModel.dataSourceDriver.skip(1).drive {[weak self] (cellViewModels: [FindGameSublistCellViewModel]) in
             guard let `self` = self else {return}
-            self.tableView.reloadData()
+//            self.tableView.reloadData()
         }.disposed(by: disposeBag)
     }
 }

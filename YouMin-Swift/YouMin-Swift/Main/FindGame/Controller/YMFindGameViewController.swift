@@ -43,7 +43,6 @@ class YMFindGameViewController: UIViewController {
         segmentedView.dataSource = segmentedDataSource
         navigationItem.titleView = segmentedView
 
-        //不能显示到最前面？
         segmentedView.listContainer = listContainerView
         view.addSubview(listContainerView)
     }
