@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840B63E7264A398400511CF8 /* YMRecommendGameHeaderTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B63E5264A398400511CF8 /* YMRecommendGameHeaderTableCell.swift */; };
+		840B63E8264A398400511CF8 /* YMRecommendGameHeaderTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840B63E6264A398400511CF8 /* YMRecommendGameHeaderTableCell.xib */; };
+		840B63EC264A5EBF00511CF8 /* YMRecommendGameTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B63EA264A5EBF00511CF8 /* YMRecommendGameTableCell.swift */; };
+		840B63ED264A5EBF00511CF8 /* YMRecommendGameTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840B63EB264A5EBF00511CF8 /* YMRecommendGameTableCell.xib */; };
 		845FA80826393CD0004A5016 /* YMFindGameSublistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845FA80726393CD0004A5016 /* YMFindGameSublistViewController.xib */; };
 		845FA80C26393FD3004A5016 /* FindGameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FA80A26393FD3004A5016 /* FindGameTableViewCell.swift */; };
 		845FA80D26393FD3004A5016 /* FindGameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845FA80B26393FD3004A5016 /* FindGameTableViewCell.xib */; };
@@ -86,6 +90,10 @@
 		19272C95A4AFEF2D1FEEF145 /* Pods-YouMin-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouMin-Swift.debug.xcconfig"; path = "Target Support Files/Pods-YouMin-Swift/Pods-YouMin-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		58F6729D58834444F91A0FAB /* Pods_YouMin_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouMin_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7CB497C58D1086AD1D785B /* Pods-YouMin-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouMin-Swift.release.xcconfig"; path = "Target Support Files/Pods-YouMin-Swift/Pods-YouMin-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		840B63E5264A398400511CF8 /* YMRecommendGameHeaderTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMRecommendGameHeaderTableCell.swift; sourceTree = "<group>"; };
+		840B63E6264A398400511CF8 /* YMRecommendGameHeaderTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YMRecommendGameHeaderTableCell.xib; sourceTree = "<group>"; };
+		840B63EA264A5EBF00511CF8 /* YMRecommendGameTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMRecommendGameTableCell.swift; sourceTree = "<group>"; };
+		840B63EB264A5EBF00511CF8 /* YMRecommendGameTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YMRecommendGameTableCell.xib; sourceTree = "<group>"; };
 		845FA80726393CD0004A5016 /* YMFindGameSublistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YMFindGameSublistViewController.xib; sourceTree = "<group>"; };
 		845FA80A26393FD3004A5016 /* FindGameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindGameTableViewCell.swift; sourceTree = "<group>"; };
 		845FA80B26393FD3004A5016 /* FindGameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindGameTableViewCell.xib; sourceTree = "<group>"; };
@@ -279,6 +287,10 @@
 			children = (
 				845FA80A26393FD3004A5016 /* FindGameTableViewCell.swift */,
 				845FA80B26393FD3004A5016 /* FindGameTableViewCell.xib */,
+				840B63E5264A398400511CF8 /* YMRecommendGameHeaderTableCell.swift */,
+				840B63E6264A398400511CF8 /* YMRecommendGameHeaderTableCell.xib */,
+				840B63EA264A5EBF00511CF8 /* YMRecommendGameTableCell.swift */,
+				840B63EB264A5EBF00511CF8 /* YMRecommendGameTableCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -675,6 +687,7 @@
 				849BE2AE261C41C30036798E /* LaunchScreen.storyboard in Resources */,
 				846DC5762636DFF9006BE311 /* category_upcoming.json in Resources */,
 				845FA80826393CD0004A5016 /* YMFindGameSublistViewController.xib in Resources */,
+				840B63ED264A5EBF00511CF8 /* YMRecommendGameTableCell.xib in Resources */,
 				846DC5712636DFF9006BE311 /* recommend_upcoming.json in Resources */,
 				84756D6B261DB2CE0059F45E /* YMHomeAttentionListViewController.xib in Resources */,
 				84756CE5261D54260059F45E /* PCGame.json in Resources */,
@@ -682,6 +695,7 @@
 				845FA80D26393FD3004A5016 /* FindGameTableViewCell.xib in Resources */,
 				84EE35FB261F0D2600708774 /* YMHomeCommon1ImageTableCell.xib in Resources */,
 				84EE3600261F102E00708774 /* YMHomeCommon3ImageTableCell.xib in Resources */,
+				840B63E8264A398400511CF8 /* YMRecommendGameHeaderTableCell.xib in Resources */,
 				846DC56F2636DFF9006BE311 /* recommend_newest.json in Resources */,
 				846DC5752636DFF9006BE311 /* category_hot.json in Resources */,
 				84756CDF261D540A0059F45E /* Hardware.json in Resources */,
@@ -769,6 +783,7 @@
 				84EE35E3261EB73700708774 /* YMAuthorCollectionViewCell.swift in Sources */,
 				84756D20261D61900059F45E /* HomePageViewModel.swift in Sources */,
 				846812512637BE52008FCB99 /* YMFindGameRecommendSublistViewController.swift in Sources */,
+				840B63EC264A5EBF00511CF8 /* YMRecommendGameTableCell.swift in Sources */,
 				8488F951261C455700B70FFF /* YMCheckRaidersViewController.swift in Sources */,
 				84756D14261D57700059F45E /* ChannelModel.swift in Sources */,
 				84756D18261D5BEB0059F45E /* YMHomeNetWork.swift in Sources */,
@@ -780,6 +795,7 @@
 				8488F94E261C453800B70FFF /* YMCircleViewController.swift in Sources */,
 				84EE35EB261EDE8E00708774 /* YMHomeCommonListViewController.swift in Sources */,
 				84756D78261DB9180059F45E /* YMAttentionAuthorTableCell.swift in Sources */,
+				840B63E7264A398400511CF8 /* YMRecommendGameHeaderTableCell.swift in Sources */,
 				849BE2A2261C41C30036798E /* AppDelegate.swift in Sources */,
 				846812612637F346008FCB99 /* YMFindGameNetwork.swift in Sources */,
 				8488F97A261C4A5B00B70FFF /* YMNavigationController.swift in Sources */,

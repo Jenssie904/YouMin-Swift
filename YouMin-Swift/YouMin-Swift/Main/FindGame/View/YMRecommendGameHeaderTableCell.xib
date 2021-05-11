@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="YMRecommendGameHeaderTableCell" customModule="YouMin_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fx0-Mg-Pcp">
+                        <rect key="frame" x="10" y="15" width="60" height="70"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="3Kz-wL-8fF"/>
+                            <constraint firstAttribute="width" constant="60" id="NBR-z1-q9J"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="-40" minY="40" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="25"/>
+                        <state key="normal" title="折扣优惠" image="icon_YouHuiZheKou_30x30_40x40_">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnE-MX-6pC">
+                        <rect key="frame" x="70" y="15" width="60" height="70"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="Jxa-N8-yCq"/>
+                            <constraint firstAttribute="width" constant="60" id="ggq-WD-YLU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="-40" minY="40" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="25"/>
+                        <state key="normal" title="即将上市" image="icon_PSNHuiMian_30x30_40x40_">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEh-zg-Ym2">
+                        <rect key="frame" x="130" y="15" width="60" height="70"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="Dg2-y4-rhM"/>
+                            <constraint firstAttribute="width" constant="60" id="OeI-uR-0Ag"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="-40" minY="40" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="25"/>
+                        <state key="normal" title="最新上市" image="icon_FaShouBiao_30x30_40x40_">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4X-BV-qTy">
+                        <rect key="frame" x="190" y="15" width="60" height="70"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="1xI-T6-TAK"/>
+                            <constraint firstAttribute="width" constant="60" id="hrD-TH-LIy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="-40" minY="40" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="25"/>
+                        <state key="normal" title="游戏榜单" image="icon_Bangdan_30x30_40x40_">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFi-ZN-dJB">
+                        <rect key="frame" x="250" y="15" width="60" height="70"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="XRg-sq-ry8"/>
+                            <constraint firstAttribute="width" constant="60" id="ekh-g5-lp8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="-40" minY="40" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="25"/>
+                        <state key="normal" title="会免游戏" image="icon_PSNHuiMian_30x30_40x40_">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WnE-MX-6pC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="10m-MW-kH0"/>
+                    <constraint firstItem="zEh-zg-Ym2" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="2eH-tn-W3R"/>
+                    <constraint firstItem="zEh-zg-Ym2" firstAttribute="leading" secondItem="WnE-MX-6pC" secondAttribute="trailing" id="Al6-yk-XdJ"/>
+                    <constraint firstItem="DFi-ZN-dJB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="C9k-rp-eXM"/>
+                    <constraint firstItem="V4X-BV-qTy" firstAttribute="leading" secondItem="zEh-zg-Ym2" secondAttribute="trailing" id="MkO-mr-iQO"/>
+                    <constraint firstItem="V4X-BV-qTy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Qlt-9N-ggO"/>
+                    <constraint firstItem="Fx0-Mg-Pcp" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hqs-L8-dWm"/>
+                    <constraint firstItem="zEh-zg-Ym2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="msA-if-D4c"/>
+                    <constraint firstItem="DFi-ZN-dJB" firstAttribute="leading" secondItem="V4X-BV-qTy" secondAttribute="trailing" id="tPE-dT-jgK"/>
+                    <constraint firstItem="WnE-MX-6pC" firstAttribute="leading" secondItem="Fx0-Mg-Pcp" secondAttribute="trailing" id="vgT-8u-Ucv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="8.6956521739130448" y="79.6875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_Bangdan_30x30_40x40_" width="40" height="40"/>
+        <image name="icon_FaShouBiao_30x30_40x40_" width="40" height="40"/>
+        <image name="icon_PSNHuiMian_30x30_40x40_" width="40" height="40"/>
+        <image name="icon_YouHuiZheKou_30x30_40x40_" width="40" height="40"/>
+    </resources>
+</document>
