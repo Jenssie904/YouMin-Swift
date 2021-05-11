@@ -13,7 +13,7 @@ class YMFindGameChildViewController: UIViewController {
     var channelIndex : Int  = 0             //频道名称
     let segmentedDataSource = JXSegmentedTitleDataSource()
     let segmentedView       = JXSegmentedView()
-    lazy var childListContainerView: JXSegmentedListContainerView! = {
+    lazy var listContainerView: JXSegmentedListContainerView! = {
         return JXSegmentedListContainerView(dataSource: self)
     }()
     
@@ -33,32 +33,33 @@ class YMFindGameChildViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //不显示segmentedView why?
     fileprivate func setupSegment() {
-        segmentedDataSource.titleNormalColor = .gray
-        segmentedDataSource.titleSelectedColor = .black
-        segmentedDataSource.titleSelectedFont = .systemFont(ofSize: 16)
-        segmentedDataSource.titleNormalFont = .systemFont(ofSize: 16)
+        segmentedDataSource.titleNormalColor    = .gray
+        segmentedDataSource.titleSelectedColor  = .black
+        segmentedDataSource.titleSelectedFont   = .systemFont(ofSize: 16)
+        segmentedDataSource.titleNormalFont     = .systemFont(ofSize: 16)
         segmentedDataSource.isTitleColorGradientEnabled = true
-        segmentedDataSource.titles = titles
+        segmentedDataSource.titles              = titles
         
         let indicator = JXSegmentedIndicatorLineView()
-        indicator.indicatorHeight = 1.0/UIScreen.main.scale
-        indicator.indicatorColor = .black
-        indicator.indicatorWidth = 30
-        indicator.verticalOffset = 5.0
+        indicator.indicatorHeight               = 1.0/UIScreen.main.scale
+        indicator.indicatorColor                = .black
+        indicator.indicatorWidth                = 30
+        indicator.verticalOffset                = 5.0
 
-        segmentedView.dataSource = segmentedDataSource
-        segmentedView.indicators = [indicator]
-        segmentedView.frame = CGRect(x: 0, y: 64, width: view.bounds.size.width, height: 40)
+        segmentedView.dataSource                = segmentedDataSource
+        segmentedView.indicators                = [indicator]
+        segmentedView.frame                     = CGRect(x: 0, y: 64, width: view.bounds.size.width, height: 40)
         view.addSubview(segmentedView)
         
-        segmentedView.listContainer = childListContainerView
-        view.addSubview(childListContainerView)
+        segmentedView.listContainer             = listContainerView
+        view.addSubview(listContainerView)
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        childListContainerView.frame = CGRect(x: 0, y: 50, width: view.bounds.size.width, height: view.bounds.size.height - 50)
+        listContainerView.frame = CGRect(x: 0, y: 100, width: view.bounds.size.width, height: view.bounds.size.height - 100)
     }
 }
 
