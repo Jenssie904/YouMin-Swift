@@ -12,6 +12,7 @@ let YMFindGameApiProvider = MoyaProvider<YMFindGameApiManager>(stubClosure:MoyaP
 
 enum YMFindGameApiManager {
     case GetGameRecommend
+    case GetGameRecommendBanner
     case GetGameCategory(_ channelIndex:Int,_ categoryIndex:Int)
 }
 
@@ -23,9 +24,11 @@ extension YMFindGameApiManager : TargetType {
     var path: String {
         switch self {
             case .GetGameRecommend:
-                return "/v5/GetChannels"
-            case .GetGameCategory:
                 return "/v5/GetAttention"
+            case .GetGameRecommendBanner:
+                return "/v5/GetAttentionBanner"
+            case .GetGameCategory:
+                return "/v5/GetChannels"
         }
     }
     
@@ -37,6 +40,8 @@ extension YMFindGameApiManager : TargetType {
         switch self {
             case .GetGameRecommend:
                 return stubbedResponse("recommend_recommend")
+            case .GetGameRecommendBanner:
+                return stubbedResponse("recommend_banner")
             case .GetGameCategory(let channelIndex,let categoryIndex):
                 return stubbedResponse(getCategoryJsonName(channelIndex: channelIndex, categoryIndex: categoryIndex))
         }
@@ -44,7 +49,7 @@ extension YMFindGameApiManager : TargetType {
     
     var task: Task {
         switch self {
-            case .GetGameRecommend,.GetGameCategory:
+        case .GetGameRecommend,.GetGameRecommendBanner,.GetGameCategory:
                 return .requestPlain
         }
     }

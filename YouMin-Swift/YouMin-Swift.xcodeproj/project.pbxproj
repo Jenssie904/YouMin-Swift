@@ -11,6 +11,12 @@
 		840B63E8264A398400511CF8 /* YMRecommendGameHeaderTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840B63E6264A398400511CF8 /* YMRecommendGameHeaderTableCell.xib */; };
 		840B63EC264A5EBF00511CF8 /* YMRecommendGameTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B63EA264A5EBF00511CF8 /* YMRecommendGameTableCell.swift */; };
 		840B63ED264A5EBF00511CF8 /* YMRecommendGameTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840B63EB264A5EBF00511CF8 /* YMRecommendGameTableCell.xib */; };
+		845B9DEA264B7F6F00828C7E /* FindGameRecommendCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B9DE9264B7F6F00828C7E /* FindGameRecommendCellViewModel.swift */; };
+		845B9DEE264B9AF900828C7E /* YMRecommendGameBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B9DEC264B9AF900828C7E /* YMRecommendGameBannerCell.swift */; };
+		845B9DEF264B9AF900828C7E /* YMRecommendGameBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845B9DED264B9AF900828C7E /* YMRecommendGameBannerCell.xib */; };
+		845B9DF7264BAEAA00828C7E /* recommend_banner.json in Resources */ = {isa = PBXBuildFile; fileRef = 845B9DF6264BAEAA00828C7E /* recommend_banner.json */; };
+		845B9DFA264BAFB600828C7E /* GameRecommendBannerResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B9DF9264BAFB600828C7E /* GameRecommendBannerResult.swift */; };
+		845B9E07264BBB3600828C7E /* FindGameRecommendBannerCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B9E06264BBB3600828C7E /* FindGameRecommendBannerCellViewModel.swift */; };
 		845FA80826393CD0004A5016 /* YMFindGameSublistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845FA80726393CD0004A5016 /* YMFindGameSublistViewController.xib */; };
 		845FA80C26393FD3004A5016 /* FindGameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FA80A26393FD3004A5016 /* FindGameTableViewCell.swift */; };
 		845FA80D26393FD3004A5016 /* FindGameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845FA80B26393FD3004A5016 /* FindGameTableViewCell.xib */; };
@@ -94,6 +100,12 @@
 		840B63E6264A398400511CF8 /* YMRecommendGameHeaderTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YMRecommendGameHeaderTableCell.xib; sourceTree = "<group>"; };
 		840B63EA264A5EBF00511CF8 /* YMRecommendGameTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMRecommendGameTableCell.swift; sourceTree = "<group>"; };
 		840B63EB264A5EBF00511CF8 /* YMRecommendGameTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YMRecommendGameTableCell.xib; sourceTree = "<group>"; };
+		845B9DE9264B7F6F00828C7E /* FindGameRecommendCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindGameRecommendCellViewModel.swift; sourceTree = "<group>"; };
+		845B9DEC264B9AF900828C7E /* YMRecommendGameBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMRecommendGameBannerCell.swift; sourceTree = "<group>"; };
+		845B9DED264B9AF900828C7E /* YMRecommendGameBannerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YMRecommendGameBannerCell.xib; sourceTree = "<group>"; };
+		845B9DF6264BAEAA00828C7E /* recommend_banner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recommend_banner.json; sourceTree = "<group>"; };
+		845B9DF9264BAFB600828C7E /* GameRecommendBannerResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRecommendBannerResult.swift; sourceTree = "<group>"; };
+		845B9E06264BBB3600828C7E /* FindGameRecommendBannerCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindGameRecommendBannerCellViewModel.swift; sourceTree = "<group>"; };
 		845FA80726393CD0004A5016 /* YMFindGameSublistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YMFindGameSublistViewController.xib; sourceTree = "<group>"; };
 		845FA80A26393FD3004A5016 /* FindGameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindGameTableViewCell.swift; sourceTree = "<group>"; };
 		845FA80B26393FD3004A5016 /* FindGameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindGameTableViewCell.xib; sourceTree = "<group>"; };
@@ -247,6 +259,7 @@
 				846DC5662636DFF9006BE311 /* recommend_upcoming.json */,
 				846DC5672636DFF9006BE311 /* recommend_highest.json */,
 				846DC5682636DFF9006BE311 /* recommend_recommend.json */,
+				845B9DF6264BAEAA00828C7E /* recommend_banner.json */,
 			);
 			path = recommend;
 			sourceTree = "<group>";
@@ -268,6 +281,7 @@
 			children = (
 				846DC57A2636E05F006BE311 /* GameListResult.swift */,
 				846DC5812636E2DF006BE311 /* GameRecommendResult.swift */,
+				845B9DF9264BAFB600828C7E /* GameRecommendBannerResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +292,8 @@
 				846812582637C92E008FCB99 /* FindGameSublistViewModel.swift */,
 				845FA820263965BD004A5016 /* FindGameSublistCellViewModel.swift */,
 				8468125C2637E62A008FCB99 /* FindGameRecommendChildViewModel.swift */,
+				845B9DE9264B7F6F00828C7E /* FindGameRecommendCellViewModel.swift */,
+				845B9E06264BBB3600828C7E /* FindGameRecommendBannerCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -291,6 +307,8 @@
 				840B63E6264A398400511CF8 /* YMRecommendGameHeaderTableCell.xib */,
 				840B63EA264A5EBF00511CF8 /* YMRecommendGameTableCell.swift */,
 				840B63EB264A5EBF00511CF8 /* YMRecommendGameTableCell.xib */,
+				845B9DEC264B9AF900828C7E /* YMRecommendGameBannerCell.swift */,
+				845B9DED264B9AF900828C7E /* YMRecommendGameBannerCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -696,6 +714,7 @@
 				84EE35FB261F0D2600708774 /* YMHomeCommon1ImageTableCell.xib in Resources */,
 				84EE3600261F102E00708774 /* YMHomeCommon3ImageTableCell.xib in Resources */,
 				840B63E8264A398400511CF8 /* YMRecommendGameHeaderTableCell.xib in Resources */,
+				845B9DF7264BAEAA00828C7E /* recommend_banner.json in Resources */,
 				846DC56F2636DFF9006BE311 /* recommend_newest.json in Resources */,
 				846DC5752636DFF9006BE311 /* category_hot.json in Resources */,
 				84756CDF261D540A0059F45E /* Hardware.json in Resources */,
@@ -705,6 +724,7 @@
 				84756CE2261D54170059F45E /* Recommend.json in Resources */,
 				846DC5772636DFF9006BE311 /* category_online.json in Resources */,
 				84756D00261D548A0059F45E /* Attention.json in Resources */,
+				845B9DEF264B9AF900828C7E /* YMRecommendGameBannerCell.xib in Resources */,
 				84FC66152649356D001EBD0E /* YMFindGameRecommendSublistViewController.xib in Resources */,
 				84756D79261DB9180059F45E /* YMAttentionAuthorTableCell.xib in Resources */,
 				84756CDC261D53FE0059F45E /* Channels.json in Resources */,
@@ -778,13 +798,16 @@
 				84EE3603261F106E00708774 /* HomeCommonCellViewModel.swift in Sources */,
 				84E9B293261C615B006D143E /* YMFMBasicContentView.swift in Sources */,
 				84756D86261DBD3E0059F45E /* HomeAuthorCollectionCellViewModel.swift in Sources */,
+				845B9DEE264B9AF900828C7E /* YMRecommendGameBannerCell.swift in Sources */,
 				8488F94B261C451A00B70FFF /* YMUserPageViewController.swift in Sources */,
 				8488F976261C494100B70FFF /* YMTabBarController.swift in Sources */,
 				84EE35E3261EB73700708774 /* YMAuthorCollectionViewCell.swift in Sources */,
 				84756D20261D61900059F45E /* HomePageViewModel.swift in Sources */,
 				846812512637BE52008FCB99 /* YMFindGameRecommendSublistViewController.swift in Sources */,
+				845B9E07264BBB3600828C7E /* FindGameRecommendBannerCellViewModel.swift in Sources */,
 				840B63EC264A5EBF00511CF8 /* YMRecommendGameTableCell.swift in Sources */,
 				8488F951261C455700B70FFF /* YMCheckRaidersViewController.swift in Sources */,
+				845B9DFA264BAFB600828C7E /* GameRecommendBannerResult.swift in Sources */,
 				84756D14261D57700059F45E /* ChannelModel.swift in Sources */,
 				84756D18261D5BEB0059F45E /* YMHomeNetWork.swift in Sources */,
 				846812592637C92E008FCB99 /* FindGameSublistViewModel.swift in Sources */,
@@ -803,6 +826,7 @@
 				84E9B294261C615B006D143E /* YMFMIrregularityBasicContentView.swift in Sources */,
 				84EE3606261F222B00708774 /* HomeCommonListViewModel.swift in Sources */,
 				845FA80C26393FD3004A5016 /* FindGameTableViewCell.swift in Sources */,
+				845B9DEA264B7F6F00828C7E /* FindGameRecommendCellViewModel.swift in Sources */,
 				8488F954261C459300B70FFF /* YMFindGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
