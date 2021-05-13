@@ -23,7 +23,6 @@ class FindGameRecommendChildViewModel {
     }
     
     public func requestData() {
-        
         //获取主列表数据
         let observable = YMFindGameApiProvider.rx.request(.GetGameRecommend).asObservable()
         _ = observable.subscribe(onNext: {[weak self]  (response:Moya.Response) in
@@ -37,8 +36,8 @@ class FindGameRecommendChildViewModel {
             let bannerCardObservable = YMFindGameApiProvider.rx.request(.GetGameRecommendBanner).asObservable()
             _ = bannerCardObservable.subscribe(onNext: {(bannerResponse:Moya.Response) in
                 guard let jsonStr = String(data: bannerResponse.data, encoding: .unicode) else {return}
-                guard let result = JSONDeserializer<GameRecommendBannerResult>.deserializeFrom(json: jsonStr, designatedPath: "result"),let bannerModels = result.result else {return}
-                array[2] = bannerModels
+                guard let result = JSONDeserializer<GameRecommendBannerResult>.deserializeFrom(json: jsonStr, designatedPath: ""),let bannerModels = result.result else {return}
+                array[2] = FindGameRecommendBannerCellViewModel(cellViewModels: bannerModels)
                 self.dataSourceBehavior.accept(array)
             })
         })
@@ -55,7 +54,30 @@ class FindGameRecommendChildViewModel {
                 }
             }else{
                 if let model = JSONDeserializer<GameRecommendMoudle>.deserializeFrom(dict: (models[i] as? Dictionary)) {
-                    array.append(model)
+                    if 1 == i {
+                        let gameModels = model.channelGames?[0].games.map({ (recommendModels:[GameRecommendMoudleModel]) -> [FindGameSublistCellViewModel] in
+                            var tmpmodels : [FindGameSublistCellViewModel] = []
+                            for i in 0..<recommendModels.count {
+                                let recModel = recommendModels[i]
+                                var gameModel = GameModel()
+                                gameModel.gameName = recModel.title
+                                gameModel.coverImageURL = recModel.coverImageUrl
+                                gameModel.gsScore = "\(recModel.userScore)"
+                                gameModel.FhPrice = "\(recModel.price)"
+                                gameModel.FhOriginalPrice = "\(recModel.priceOriginally)"
+                                gameModel.expectCount = recModel.userCount_WantToPlay
+                                gameModel.playCount = recModel.userCount_Played
+                                
+                                let cellViewModel = FindGameSublistCellViewModel(model: gameModel)
+                                tmpmodels.append(cellViewModel)
+                            }
+                            return tmpmodels
+                        }) ?? []
+                        let cellViewModel = FindGameRecommendCellViewModel(cellViewModels: gameModels)
+                        array.append(cellViewModel)
+                    }else{
+                        array.append(model)
+                    }
                 }
             }
         }

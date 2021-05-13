@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="YMRecommendGameTableCell" customModule="YouMin_Swift" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="YMRecommendGameTableCell" customModule="YouMin_Swift" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="406"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -42,7 +42,7 @@
                             <action selector="clickMore" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VW5-ri-EeV"/>
                         </connections>
                     </button>
-                    <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xik-WP-kvn">
+                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xik-WP-kvn">
                         <rect key="frame" x="15" y="45" width="86" height="168"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KjO-Ed-Klx">
@@ -128,7 +128,7 @@
                             <constraint firstItem="KjO-Ed-Klx" firstAttribute="top" secondItem="Xik-WP-kvn" secondAttribute="top" id="dPR-f4-E40"/>
                         </constraints>
                     </view>
-                    <view tag="11" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KgV-cR-RLf">
+                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KgV-cR-RLf">
                         <rect key="frame" x="117" y="45" width="86" height="168"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2oH-Z5-MKU">
@@ -215,7 +215,7 @@
                             <constraint firstItem="2oH-Z5-MKU" firstAttribute="leading" secondItem="KgV-cR-RLf" secondAttribute="leading" id="zVh-th-M9q"/>
                         </constraints>
                     </view>
-                    <view tag="12" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGd-Cb-iQf">
+                    <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGd-Cb-iQf">
                         <rect key="frame" x="219" y="45" width="86" height="168"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ock-fj-A2g">
@@ -301,7 +301,7 @@
                             <constraint firstItem="ock-fj-A2g" firstAttribute="top" secondItem="QGd-Cb-iQf" secondAttribute="top" id="ts0-qv-ImH"/>
                         </constraints>
                     </view>
-                    <view tag="13" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcA-iR-GCP">
+                    <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcA-iR-GCP">
                         <rect key="frame" x="15" y="223" width="86" height="168"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Fo-WP-x5I">
@@ -387,7 +387,7 @@
                             <constraint firstItem="dip-66-0af" firstAttribute="centerY" secondItem="Yqy-bU-CRP" secondAttribute="centerY" id="u8P-IR-vg8"/>
                         </constraints>
                     </view>
-                    <view tag="14" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2n-6z-OAQ">
+                    <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2n-6z-OAQ">
                         <rect key="frame" x="117" y="223" width="86" height="168"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v6a-ec-vL0">
@@ -473,7 +473,7 @@
                             <constraint firstItem="G4g-IR-d02" firstAttribute="leading" secondItem="x2n-6z-OAQ" secondAttribute="leading" id="yvZ-BT-Nc0"/>
                         </constraints>
                     </view>
-                    <view tag="15" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PBT-Xu-5mS">
+                    <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PBT-Xu-5mS">
                         <rect key="frame" x="219" y="223" width="86" height="168"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rL0-TM-rgJ">

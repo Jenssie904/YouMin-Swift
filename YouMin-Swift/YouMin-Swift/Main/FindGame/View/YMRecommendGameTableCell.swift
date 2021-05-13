@@ -31,7 +31,7 @@ class YMRecommendGameTableCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        for i in 10...15 {
+        for i in 1...6 {
             let view = self.viewWithTag(i)!
             
             let coverView = view.viewWithTag(10) as! UIImageView
@@ -86,9 +86,9 @@ class YMRecommendGameTableCell: UITableViewCell {
                 }.disposed(by: disposeBag)
                 
                 
-                self.viewWithTag(i+10)?.isHidden = false
+                self.viewWithTag(i+1)?.isHidden = false
             } else {
-                self.viewWithTag(i+10)?.isHidden = true
+                self.viewWithTag(i+1)?.isHidden = true
             }
         }
     }
@@ -96,7 +96,7 @@ class YMRecommendGameTableCell: UITableViewCell {
     //点击item
     @IBAction func clickItems(button:UIButton) {
         let tag = button.tag
-        print("========点击了第 \(tag-9) 个item")
+        print("========点击了第 \(tag) 个item")
     }
     
     //点击查看更多
