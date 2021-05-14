@@ -6,10 +6,10 @@
 - 布局采用xib+autolayout
 
 ## 效果图
-![](https://www.hualigs.cn/image/609e6098c2a2d.jpg)
-![](https://www.hualigs.cn/image/609e609fe6553.jpg)
-![](https://www.hualigs.cn/image/609e60a56184d.jpg)
-![](https://www.hualigs.cn/image/609e60a9acf67.jpg)
-![](https://www.hualigs.cn/image/609e60b326eb2.jpg)
+![](https://www.hualigs.cn/image/609e630a72d73.jpg)
+![](https://www.hualigs.cn/image/609e630e028e5.jpg)
+![](https://www.hualigs.cn/image/609e631277140.jpg)
+![](https://www.hualigs.cn/image/609e6316ef518.jpg)
+![](https://www.hualigs.cn/image/609e631e72d1c.jpg)
 
 ## 本项目仅供学习使用
